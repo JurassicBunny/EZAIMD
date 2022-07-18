@@ -19,4 +19,12 @@ multiplicity: 1
 NOTE: For a successful simulation, the `force` keyword is REQUIRED!
 
 # Setting Up A Simulation
-A simulation requires to items, the configuration and a valid gaussian16 output file. Where a valid output file will contain molecular coordinates in standard orientation. If multiply coordinates are valid in an output file, the last set of coordinates will be used. EZAIMD will through an error when no atomic information can be read.
+A simulation requires two items, the configuration and a valid gaussian16 output file. Where a valid output file will contain molecular coordinates in standard orientation. If multiply coordinates are valid in an output file, the last set of coordinates will be used. EZAIMD will through an error when no atomic information can be read.
+
+Once the requirements have been met, one can start a default settings simulation with the following command:
+
+`EZAIMD [Gaussian16 outputfile]`
+
+This will begin a simulation with: 
+Time step: 1fs
+Number of steps: 10000
