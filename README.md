@@ -1,8 +1,8 @@
 # EZAIMD
-Command line tool that allows the user to easly run ab initio molecular dynamics (AIMD) interfacing with the Gaussian16 quantum chemical package.
+Command line tool that allows the user to easly run ab initio molecular dynamics (AIMD) interfacing with the [Gaussian16](https://gaussian.com/gaussian16/). quantum chemical package.
 
 # Configuration
-EZAIMD requires the use of a configuration file, which must be named `config.yaml`, in the root directory of a simulation. This configuration is used to generate input for the quantum chemical package [Gaussian16](https://gaussian.com/gaussian16/). An example configuration is given bellow:
+EZAIMD requires the use of a configuration file, which must be named `config.yaml`, in the root directory of a simulation. This configuration is used to generate input for the quantum chemical package Gaussian16. An example configuration is given bellow:
 
 config.yaml:
 ```yaml
@@ -53,3 +53,12 @@ A number of options are available to the user.
 
 ## Example 
 `--restart` will restart a simulaiton form the `save.json` file generated during the simulation.
+
+#Putting It All Together 
+As an example, to run a simulaiton with a time step of 0.5fs for 10000 steps, and hold atoms 1-4,6-10,12-25 fixed, the following command may be used:
+
+`EZAIMD [Gaussian16 output] --time-step 0.5 --freeze 1-4,6-10,12-25` 
+
+If the above simulation fails to complete in the alloted time, one can restart this simulation as follows:
+
+`EZAIMD [Gaussian16 output] --restart`
