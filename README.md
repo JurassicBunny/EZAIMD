@@ -54,7 +54,7 @@ A number of options are available to the user.
 ## Example 
 `--restart` will restart a simulaiton form the `save.json` file generated during the simulation.
 
-#Putting It All Together 
+# Putting It All Together 
 As an example, to run a simulaiton with a time step of 0.5fs for 10000 steps, and hold atoms 1-4,6-10,12-25 fixed, the following command may be used:
 
 `EZAIMD [Gaussian16 output] --time-step 0.5 --freeze 1-4,6-10,12-25` 
