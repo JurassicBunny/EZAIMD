@@ -25,6 +25,16 @@ Once the requirements have been met, one can start a default settings simulation
 
 `EZAIMD [Gaussian16 outputfile]`
 
-This will begin a simulation with: 
+This will begin a simulation with:
+
 Time step: 1fs
+
 Number of steps: 10000
+
+# Options
+A number of options are available to the user.
+
+`--freeze`: freeze the requested atoms during the simulaiton
+
+## Example
+`--freeze 1-10,90-100` will freeze atoms 1-10 and 90-100.
