@@ -34,7 +34,22 @@ Number of steps: 10000
 # Options
 A number of options are available to the user.
 
-`--freeze`: freeze the requested atoms during the simulaiton
+`--freeze`: freeze the requested atoms during the simulaiton.
 
 ## Example
 `--freeze 1-10,90-100` will freeze atoms 1-10 and 90-100.
+
+`--time-step`: alter the time step of the simulation, takes values in femtoseconds.
+
+## Example
+`--time-step 0.1` change the timestep form the defualt, 1fs, to 0.1fs.
+
+`--num-steps`: alter the number of simulation steps. Requires interger values.
+
+## Example
+`--num-steps 50000` change the number of steps from the defualt, 10000, to 50000.
+
+`--restart`: restart a simulation from `save.json`. Take no arguments.
+
+## Example 
+`--restart` will restart a simulaiton form the `save.json` file generated during the simulation.
